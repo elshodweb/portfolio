@@ -1,0 +1,19 @@
+.container {
+   margin: 0 8%;
+   padding: 0 20px;
+}
+body {
+   background: #000000;
+}
+
+@media (max-width: 1180px) {
+   .container {
+      margin: 0 2%;
+      padding: 0 10px;
+   }
+}
+@media (max-width: 576px) {
+   .container {
+      padding: 0 10px;
+   }
+}

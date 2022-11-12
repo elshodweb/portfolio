@@ -1,0 +1,61 @@
+.footer {
+   padding: 50px 0;
+   background: linear-gradient(130.68deg, #414141 0%, #2d2d2d 100.52%);
+   & .container {
+      padding: 0 180px;
+   }
+   &__row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0 auto;
+   }
+
+   &__column {
+      margin-bottom: 40px;
+      &:nth-child(1) {
+         width: 200px;
+      }
+      &:nth-child(2) {
+         width: 300px;
+      }
+      &:nth-child(3) {
+         width: 300px;
+      }
+   }
+
+   &__item {
+      margin: 10px 0;
+      font-family: "Arodora Pro";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 21px;
+      color: #e4e4e4;
+   }
+   & .menu__logo {
+      margin-bottom: 65px;
+   }
+}
+
+@media (max-width: 1160px) {
+   .footer {
+      padding: 20px 0;
+      & .container {
+         padding: 0 20px;
+      }
+   }
+}
+
+@media (max-width: 539px) {
+   .footer {
+      & .container {
+      }
+      &__column{
+         &:nth-child(1){
+            width: 300px;
+         }
+      }
+   }
+}

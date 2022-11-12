@@ -1,0 +1,101 @@
+.button {
+   display: block;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 200px;
+   height: 60px;
+   border-radius: 6px;
+   position: relative;
+   overflow: hidden;
+   transition: all 0.3s;
+   &:hover &__waves {
+      top: -50px;
+   }
+   &:hover {
+      transition: all 0.3s ease 0.5s;
+      box-shadow: 0px 0px 25px rgba(226, 158, 0, 0.774);
+   }
+   &:active &__waves {
+      background: linear-gradient(87.32deg, #ffb700 4.47%, #ac9363 95.53%);
+   }
+   &__text {
+      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 60px;
+      font-family: "NEXT ART";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      color: #fff;
+      text-transform: uppercase;
+      position: absolute;
+      z-index: 1;
+      left: 17%;
+      text-shadow: 0 0 12px #000;
+   }
+
+   &__waves {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      top: 0;
+      left: -25%;
+      transition: all 0.9s;
+      background: linear-gradient(87.32deg, #ad7d03 4.47%, #855901 95.53%);
+      &::after,
+      &::before {
+         content: "";
+         position: absolute;
+         width: 250%;
+         height: 250%;
+         background: #0000006e;
+         left: 50%;
+         top: 0;
+         border-radius: 44%;
+         animation: animation 5s infinite linear;
+         transform: translate3d(-50%, -96%, 0);
+      }
+      &::after {
+         background: rgb(0, 0, 0);
+         border-radius: 48%;
+         animation: animation 8s infinite linear;
+      }
+   }
+}
+
+@keyframes animation {
+   0% {
+      transform: translate3d(-50%, -96%, 0) rotate(0deg);
+   }
+   100% {
+      transform: translate3d(-50%, -96%, 0) rotate(360deg);
+   }
+}
+
+@media (max-width: 768px) {
+   .button {
+      border-radius: 6px;
+      width: 180px;
+      height: 50px;
+      transition: all 0s;
+      &__text {
+         width: 100%;
+         left: 50%;
+         transform: translateX(-50%);
+         font-size: 15px;
+      }
+      &__waves {
+         top: -50px;
+         transition: all 0s;
+      }
+      &:hover {
+         box-shadow: 0 0 0 #000;
+      }
+      &:active &__waves {
+         box-shadow: 0px 0px 25px rgba(226, 158, 0, 0.774);
+      }
+   }
+}

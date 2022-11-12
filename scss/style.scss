@@ -1,0 +1,24 @@
+body,a {
+   color: #e4e4e4;
+   font-family: Arodora Pro;
+   font-style: normal;
+   font-weight: 300;
+}
+
+body{
+   width: 100%;
+   height: 100%;
+}
+@import url("../fonts/style.css");
+
+@import "base/general";
+@import "base/mixin";
+@import "base/null";
+@import "base/btn";
+
+@import "section/menu";
+@import "section/hi";
+@import "section/modal";
+@import "section/footer";
+@import "section/slider";
+

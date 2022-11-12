@@ -1,0 +1,23 @@
+@font-face {
+   font-family: "NEXT ART";
+   src: local("Loew Next Medium"), local("Loew-Next-Medium"), url("LoewNext-Medium.woff2") format("woff2"),
+      url("LoewNext-Medium.woff") format("woff"), url("LoewNext-Medium.ttf") format("truetype");
+   font-weight: 400;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Arodora Pro";
+   src: url("Axiforma-Light.eot");
+   src: local("Axiforma Light"), local("Axiforma-Light"), url("Axiforma-Light.eot?#iefix") format("embedded-opentype"),
+      url("Axiforma-Light.woff") format("woff"), url("Axiforma-Light.ttf") format("truetype");
+   font-weight: 300;
+   font-style: normal;
+}
+@font-face {
+   font-family: "NEXT ART";
+   src: local("Loew Next ExtraBold"), local("Loew-Next-ExtraBold"), url("LoewNext-ExtraBold.woff2") format("woff2"),
+      url("LoewNext-ExtraBold.woff") format("woff"), url("LoewNext-ExtraBold.ttf") format("truetype");
+   font-weight: 700;
+   font-style: normal;
+}
